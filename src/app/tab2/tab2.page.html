@@ -1,17 +1,49 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Tab 2
+
+      <ion-grid fixed>
+        <ion-row>
+          <ion-col size="6">
+            Tabela de usuários
+          </ion-col>
+
+          <ion-col size="1" offset="5">
+            <ion-icon name="people-outline"></ion-icon>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
+<ion-content [fullscreen]="true" class="ion-margin">
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">Tab 2</ion-title>
+      <ion-title size="large">
+        Tabela de usuários
+        <ion-icon name="people-outline"></ion-icon>
+      </ion-title>
     </ion-toolbar>
   </ion-header>
 
-  <app-explore-container name="Tab 2 page"></app-explore-container>
-</ion-content>
+  <div id="table">
+    <div class="container pt-3">
+      <h1 class="display-5 text-center col">Tabela de cadastros</h1>
+      <table id="tabela" class="table table-striped table-bordereds justify-content-center">
+          <thead>
+              <tr>
+                  <th>Nome</th>
+                  <th>E-mail</th>
+                  <th></th>
+              </tr>
+          </thead>
+
+          <tbody>
+            
+          </tbody>
+      </table>
+    </div>
+  </div>
+</ion-content> 

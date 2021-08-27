@@ -1,0 +1,13 @@
+tr:nth-of-type(1){
+  background-color: #59429d;
+  color: #F0F8FF;
+  }
+  
+#tabela tbody tr:nth-of-type(odd){
+  background-color: #e1edf7;
+  color: #59429d;
+}
+
+.container.pt-3 {
+  word-break: break-all;
+}
